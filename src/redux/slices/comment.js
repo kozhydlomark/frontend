@@ -42,7 +42,6 @@ const commentSlice = createSlice({
         state.items.push(action.payload);
         state.status = "succeeded";
 
-        console.log("Доданий коментар:", action.payload);
       })
       .addCase(postComment.rejected, (state) => {
         state.status = "failed";

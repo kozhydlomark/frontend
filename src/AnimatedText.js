@@ -8,7 +8,7 @@ const AnimatedText = () => {
     from: { opacity: 0 },
     config: { duration: 5000 },
     onRest: () => {
-      console.log("Text animation finished");
+
     },
   });
 

@@ -76,7 +76,7 @@ export const FullPost = () => {
       );
 
       const result = await response.json();
-      console.log("result: ", result);
+
 
       const responses = await fetch(
         `http://localhost:4444/user?postId=${result._id}`,
@@ -89,7 +89,7 @@ export const FullPost = () => {
         }
       );
       const createdComment = await responses.json();
-      console.log("createdComment: ", createdComment);
+
 
       setComments((prevComments) => [...prevComments, createdComment]);
     } catch (error) {
